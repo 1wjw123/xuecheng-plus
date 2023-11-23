@@ -1,5 +1,6 @@
 Java
 HELP.md
+xuecheng-plus-generator/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**

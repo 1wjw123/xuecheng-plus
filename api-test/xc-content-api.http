@@ -1,0 +1,39 @@
+
+POST {{content_host}}/content/course/list?pageNo=1&pageSize=3
+Content-Type: application/json
+
+{
+"auditStatus": "202004",
+"courseName": "java",
+"publishStatus": "203001"
+}
+
+### 查询课程分类
+GET {{content_host}}/content//course-category/tree-nodes
+
+### 创建课程
+POST {{content_host}}/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 100,
+  "originalPrice":10,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "asdad",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "java",
+  "grade": "204001",
+  "description": "测试课程103测试课程103"
+}
+
+### 根据id查询课程
+GET {{content_host}}/content/course/40
+Content-Type: application/json
