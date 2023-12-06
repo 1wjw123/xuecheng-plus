@@ -2,6 +2,7 @@ package com.xuecheng.content.service;
 
 import com.xuecheng.content.model.dto.SaveTeachplanDto;
 import com.xuecheng.content.model.dto.TeachplanDto;
+import com.xuecheng.content.model.po.CourseTeacher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,4 +23,23 @@ public interface TeachplanService {
      * @param saveTeachplanDto 课程计划信息
      */
     void saveTeachplan(SaveTeachplanDto saveTeachplanDto);
+
+    /**
+     * 删除课程计划
+     * @param id
+     */
+    void deleteTeachplan(Long id);
+
+    /**
+     * 课程计划上移
+     * @param id
+     */
+    void moveup(Long id);
+
+    /**
+     * 课程计划下移
+     * @param id
+     */
+    void movedown(Long id);
+
 }
